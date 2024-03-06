@@ -90,7 +90,11 @@ cron.schedule(config.backup.cron, () => {
     console.error(`Backup task failed: ${err}`)
   );
 });
-// Promise.all(config.backup.items.map(backupItem)).catch((err) =>
-//   console.error(`Backup task failed: ${err}`)
-// );
+
+if (config.immediately) {
+  Promise.all(config.backup.items.map(backupItem)).catch((err) =>
+    console.error(`Backup task failed: ${err}`)
+  );
+}
+
 console.log("Backup service started.");

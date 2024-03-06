@@ -12,4 +12,7 @@ backup:
     - key: uniqueKey2
       path: /path/to/your/file2.txt
       keep: 5
-  cron: '0 */4 * * *' # 每4小时执行一次
+  cron: "0 */4 * * *" # 每4小时执行一次
+
+# 是否立即执行一次备份
+immediately: false
