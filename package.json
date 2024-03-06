@@ -1,5 +1,5 @@
 {
-  "name": "backup",
+  "name": "@gmi/backup",
   "version": "1.0.0",
   "description": "定时备份工具，备份到阿里云oss",
   "main": "index.js",
