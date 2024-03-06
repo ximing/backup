@@ -1,0 +1,15 @@
+oss:
+  region: <你的oss区域>
+  accessKeyId: <你的AccessKeyId>
+  accessKeySecret: <你的AccessKeySecret>
+  bucket: <你的bucket名称>
+
+backup:
+  items:
+    - key: uniqueKey1
+      path: /path/to/your/directory1
+      keep: 3
+    - key: uniqueKey2
+      path: /path/to/your/file2.txt
+      keep: 5
+  cron: '0 */4 * * *' # 每4小时执行一次

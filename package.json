@@ -1,0 +1,31 @@
+{
+  "name": "backup",
+  "version": "1.0.0",
+  "description": "定时备份工具，备份到阿里云oss",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ximing/backup.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ximing/backup/issues"
+  },
+  "homepage": "https://github.com/ximing/backup#readme",
+  "dependencies": {
+    "ali-oss": "^6.20.0",
+    "fs-extra": "^11.2.0",
+    "node-cron": "^3.0.3",
+    "yamljs": "^0.3.0",
+    "glob": "^10.3.10",
+    "dayjs": "^1.11.10"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.6"
+  }
+}
